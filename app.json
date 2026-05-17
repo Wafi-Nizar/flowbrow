@@ -27,21 +27,7 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
-        }
-      ]
-    ],
+    "plugins": ["expo-router", "expo-updates"],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
@@ -51,6 +37,12 @@
       "eas": {
         "projectId": "77a3bc8f-3092-4159-b4f6-5ff6dc701914"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/77a3bc8f-3092-4159-b4f6-5ff6dc701914"
     }
   }
 }
